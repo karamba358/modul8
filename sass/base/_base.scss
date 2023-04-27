@@ -1,0 +1,41 @@
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+
+
+body {
+    font-family: var(--primari-font-family);
+    color: var(--title-color);
+    border-color: var(--primari-background-color);
+   
+}
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+

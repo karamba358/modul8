@@ -1,0 +1,16 @@
+.mobile-menu-btn{
+    display: block;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    line-height: 0;
+}
+
+
+
+@media screen and (min-width: 767px) {
+
+    .mobile-menu-btn {
+        display: none;
+    }
+}

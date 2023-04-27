@@ -1,0 +1,137 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--secondary-background-color);
+
+   
+    &__title {
+        margin-bottom: 20px;
+        font-family: Roboto;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+
+        letter-spacing: 3%;
+        color: var(--secondary-color);
+    }
+    
+}
+    
+    .footer-social{
+        margin-bottom: 60px;
+
+        &-list {
+                display: flex;
+                justify-content: center;
+                margin-left: -10px;
+                margin-top: -10px;
+        
+                &__item {
+                    margin-left: 10px;
+                    margin-top: 10px;
+                }
+        
+            }
+    }
+
+.footer-social-list__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #44454E;
+    fill: var(--secondary-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     
+        &:hover,
+        &:focus {
+                background-color: var(--accent-color);
+            }
+
+}
+
+.footer-address{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.address-list{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+.address-list__link {
+    font-family: var(--primari-font-family);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: var(--secondary-color);
+
+    &--color {
+            color: rgba(255, 255, 255, 60%)
+        }
+}
+
+.address-list__item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .footer-tablet{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    .footer--flex{
+         display: flex;
+         justify-content: space-between;
+         
+    }
+        .footer-address{
+            justify-content: left;
+            margin-bottom: 0px;
+           margin-right: 70px;
+           
+        }
+        .footer-social {
+            margin-bottom: 0px;
+        }
+
+        .address-list{
+            display: block;
+        }
+
+        .footer-tablet{
+         
+            align-items: baseline;
+        }
+    
+        .footer__title{
+            text-align: left;
+        }
+
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+
