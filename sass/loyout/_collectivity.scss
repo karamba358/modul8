@@ -3,18 +3,17 @@
 
     &-list {
         
-        margin-left: -30px;
-        margin-top: -30px;
+       
 
             &__item {
-
-                    margin-left: 30px;
-                    margin-top: 30px;
                     background-color: var(--secondary-color);
                     border-radius: 0px 0px 4px 4px;
                     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
                             0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-                           
+                       
+                &:not(:last-child) {
+                        margin-bottom: 30px;
+                    }
                 }
         
             &__title {
@@ -45,20 +44,30 @@
                 }
            
            &__img{
+           
             margin-left: auto;
             margin-right: auto;
            }
         }
 }
 
-
+@media screen and (max-width: 479px){
+    .collectivity-list__img{
+        width: 290px;
+    }
+}
 
 @media screen and (min-width: 768px) {
 
     .collectivity-list{
+
        display: flex;
+        margin-left: -30px;
+        margin-top: -30px;
         flex-wrap: wrap;
         &__item {
+            margin-left: 30px;
+            margin-top: 30px;
             flex-basis: calc((100% - 2 * 30px) / 2);
            
         }

@@ -9,3 +9,9 @@
 
     color: var(--title-color);
 }
+
+@media screen and (min-width: 1200px) {
+    .section-title{
+        margin-bottom: 50px;
+    }
+}

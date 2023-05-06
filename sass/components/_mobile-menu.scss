@@ -1,5 +1,5 @@
 .mobile-menu{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -9,6 +9,10 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+
+    z-index: 1;
+
+   
 }
 
 .mobile-menu.is-open{
@@ -16,6 +20,8 @@
         visibility: visible;
         pointer-events: auto;
 }
+
+
 
 
 .mobile-menu__link{
@@ -32,6 +38,10 @@
             color: var(--accent-color);
         }
 }
+.current {
+    color: var(--accent-color);
+}
+
 
 .mobile-menu__item{
     margin-bottom: 32px;
