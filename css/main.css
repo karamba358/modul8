@@ -1335,11 +1335,11 @@ body {
   color: var(--secondary-color);
 }
 
-@media screen and (max-width: 1199px) {
-  .portfolio-list--padding {
-    padding-bottom: 56px;
-  }
-}
+/*@media screen and (max-width: 1199px) {
+    .portfolio-list--padding {
+            padding-bottom: 56px;
+        }
+}*/
 @media screen and (max-width: 768px) {
   .portfolio-list__item:not(:last-child) {
     margin-bottom: 30px;
