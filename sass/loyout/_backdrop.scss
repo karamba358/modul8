@@ -26,8 +26,6 @@
     top: 104px;
     left: 15px;
     right: 15px;
-   
-   width: 450px;
     min-height: 609px;
     background-color: var(--secondary-color);
 
@@ -54,6 +52,12 @@
                 }
         }
 }
+@media screen and (min-width: 480px){
+        .modal{
+                width: 450px;
+        }
+       
+}
 
 @media screen and (min-width: 481px) {
         .modal {
@@ -61,6 +65,13 @@
         left: 50%;
         transform: translate(-50%, -50%)
         }
+}
+
+@media screen and (min-width: 1200px) {
+        .modal {
+                width: 528px;
+        }
+
 }
 
 

@@ -1031,7 +1031,6 @@ body {
   top: 104px;
   left: 15px;
   right: 15px;
-  width: 450px;
   min-height: 609px;
   background-color: var(--secondary-color);
 }
@@ -1063,12 +1062,22 @@ body {
   fill: var(--accent-color);
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 481px) {
   .modal {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
   }
 }
 .modal-form__title {
@@ -1184,7 +1193,7 @@ body {
   font-family: var(--primari-font-family);
   font-weight: 400;
   font-size: 12px;
-  line-height: 1, 172;
+  line-height: 1.172;
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
