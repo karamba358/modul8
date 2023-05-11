@@ -37,7 +37,11 @@
         }
 }
 
-
+@media screen and (max-width: 400px) {
+    .compani-list__link {
+        padding: 10px;
+    }
+}
 @media screen and (min-width: 480px) {
     .compani-list__link {
         width: 210px;

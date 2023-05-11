@@ -207,7 +207,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 356px;
 }
 
 .mobile-menu-social__link {
@@ -228,6 +227,24 @@ body {
   border-right: none;
 }
 
+@media screen and (max-width: 399px) {
+  .mobile-menu-social {
+    margin-top: -10px;
+    margin-left: -10px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mobile-menu-social__item {
+    margin-top: 10px;
+    margin-left: 10px;
+    -ms-flex-preferred-size: calc((100% - 20px) / 2);
+        flex-basis: calc((100% - 20px) / 2);
+    border-right: none;
+  }
+}
 .hero__modal-btn {
   min-width: 152px;
   padding: 10px 32px;
@@ -444,6 +461,12 @@ body {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 767px) {
+  .header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
 @media screen and (min-width: 768px) {
   .navigation {
     display: -webkit-box;
@@ -846,6 +869,11 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 400px) {
+  .compani-list__link {
+    padding: 10px;
+  }
+}
 @media screen and (min-width: 480px) {
   .compani-list__link {
     width: 210px;
@@ -1255,6 +1283,11 @@ body {
   background-color: #188CE8;
 }
 
+@media screen and (max-width: 399px) {
+  .modal-form__textarea {
+    height: 70px;
+  }
+}
 .portfolio-list {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -86,7 +86,7 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 356px;
+   
    
 }
 
@@ -110,4 +110,21 @@
     border-right: none;
 
 }
+
+@media screen and (max-width: 399px){
+    .mobile-menu-social {
+        margin-top: -10px;
+        margin-left: -10px;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+}
+.mobile-menu-social__item{
+    margin-top: 10px;
+    margin-left: 10px;
+    flex-basis: calc((100% - 2 * 10px) / 2);
+    border-right: none;
+}
+}   
+
 
