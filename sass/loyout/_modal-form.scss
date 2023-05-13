@@ -175,7 +175,17 @@
 }
 
 @media screen and (max-width: 399px ) {
+    .modal-form__title{
+        font-size: 15px;
+    }
     .modal-form__textarea{
         height: 70px;
+    }
+   
+}
+
+@media screen and (min-width: 1200px){
+    .modal-form__failed-checkbox{
+        font-size: 14px;
     }
 }

@@ -26,7 +26,6 @@
     top: 104px;
     left: 15px;
     right: 15px;
-    min-height: 609px;
     background-color: var(--secondary-color);
 
     &-close-btn {
@@ -52,15 +51,16 @@
                 }
         }
 }
-@media screen and (min-width: 480px){
-        .modal{
-                width: 450px;
-        }
-       
-}
 
-@media screen and (min-width: 481px) {
+@media screen and (max-width: 399px){
+        .modal{
+            top: 20px;
+        }
+}
+  
+@media screen and (min-width: 480px) {
         .modal {
+        width: 450px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%)
